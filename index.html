@@ -526,241 +526,218 @@
 
   <script>
     const questions = [
-      {
-        id: 1,
-        q: 'O que é o problema de agência? Por que os custos de agência podem ser maiores para uma multinacional do que para uma empresa puramente nacional?',
-        a: 'Problema de agência é o conflito entre quem administra e quem é dono da empresa. Na multinacional, os custos são maiores porque há mais filiais, mais distância, mais culturas e mais dificuldade de controle.',
-        keywords: ['conflito gestor x dono', 'mais filiais', 'distância', 'controle difícil']
-      },
-      {
-        id: 2,
-        q: 'Explique como a teoria do ciclo do produto se relaciona com o crescimento de uma multinacional.',
-        a: 'A empresa cria o produto no mercado doméstico, cresce, depois leva a produção e a venda para outros países. Assim, o ciclo do produto ajuda a explicar a expansão internacional da empresa.',
-        keywords: ['produto nasce no país de origem', 'expansão', 'produção externa', 'crescimento internacional']
-      },
-      {
-        id: 3,
-        q: 'Descreva um cenário em que o tamanho de uma empresa não é afetado pelo acesso a oportunidades internacionais.',
-        a: 'Isso ocorre quando a empresa já consegue atender toda a demanda com seus recursos atuais ou quando não tem capacidade, interesse ou vantagem para atuar fora do país.',
-        keywords: ['demanda já atendida', 'sem capacidade', 'sem vantagem externa']
-      },
-      {
-        id: 4,
-        q: 'Descreva as restrições que interferem no objetivo de uma multinacional.',
-        a: 'As principais restrições são leis, impostos, risco político, câmbio, concorrência, limitações financeiras e diferenças culturais. Tudo isso pode reduzir lucro e dificultar decisões.',
-        keywords: ['leis', 'impostos', 'risco político', 'câmbio', 'cultura']
-      },
-      {
-        id: 5,
-        q: 'Licenciamento com empresa estrangeira x aquisição de empresa estrangeira: diferenças de risco e retorno.',
-        a: 'No licenciamento, o risco é menor, porque exige menos investimento, mas o retorno também tende a ser menor. Na aquisição, o risco é maior, pois exige alto investimento e integração, mas o retorno potencial pode ser maior.',
-        keywords: ['licenciamento = menor risco', 'aquisição = maior risco', 'menor investimento', 'maior retorno potencial']
-      },
-      {
-        id: 6,
-        q: 'Por que os fluxos de caixa esperados das multinacionais podem cair mesmo sem dano direto após um ataque terrorista?',
-        a: 'Porque aumenta a incerteza, cai o consumo, cai o investimento, sobe o custo de segurança e pode haver redução no comércio e no turismo. Isso afeta receitas futuras.',
-        keywords: ['incerteza', 'queda do consumo', 'custo de segurança', 'menos comércio']
-      },
-      {
-        id: 7,
-        q: 'De que é geralmente composto o saldo em conta corrente?',
-        a: 'É composto principalmente pela balança comercial, balança de serviços, renda primária e transferências unilaterais.',
-        keywords: ['balança comercial', 'serviços', 'rendas', 'transferências']
-      },
-      {
-        id: 8,
-        q: 'Quais são alguns dos principais objetivos do FMI? Como o FMI está envolvido no comércio internacional?',
-        a: 'O FMI busca estabilidade financeira internacional, cooperação monetária e ajuda a países com crise no balanço de pagamentos. Ele apoia o comércio ao tentar manter estabilidade cambial e financeira.',
-        keywords: ['estabilidade financeira', 'cooperação monetária', 'balanço de pagamentos', 'estabilidade cambial']
-      },
-      {
-        id: 9,
-        q: 'O déficit na balança comercial dos EUA seria maior ou menor se o dólar se desvalorizasse em relação a todas as moedas?',
-        a: 'Tende a ser menor, porque as exportações ficariam mais baratas para outros países e as importações mais caras para os EUA.',
-        keywords: ['déficit menor', 'exportações mais baratas', 'importações mais caras']
-      },
-      {
-        id: 10,
-        q: 'Como interpretar a afirmação de que a fraqueza do iene era um problema para as exportações da Coreia do Sul?',
-        a: 'Significa que os produtos japoneses ficaram mais baratos no exterior, aumentando a concorrência contra os produtos sul-coreanos.',
-        keywords: ['iene fraco', 'produto japonês mais barato', 'mais concorrência']
-      },
-      {
-        id: 11,
-        q: 'O que significa dizer que a taxa de câmbio pode funcionar como barreira comercial?',
-        a: 'Significa que, mesmo sem tarifa, um país pode ganhar vantagem se sua moeda se desvalorizar, tornando suas exportações mais baratas e as importações mais caras.',
-        keywords: ['câmbio como barreira', 'moeda desvalorizada', 'exportação barata', 'importação cara']
-      },
-      {
-        id: 12,
-        q: 'Por que algumas instituições financeiras preferem fornecer crédito fora de seu próprio país?',
-        a: 'Porque podem encontrar maior retorno, diversificação, novos clientes e oportunidades em mercados com demanda maior por crédito.',
-        keywords: ['maior retorno', 'diversificação', 'novos clientes']
-      },
-      {
-        id: 13,
-        q: 'Quais características dos serviços bancários de câmbio as multinacionais devem considerar?',
-        a: 'Devem considerar custo, rapidez, confiabilidade, limite de operação, atendimento global e capacidade de reduzir risco cambial.',
-        keywords: ['custo', 'rapidez', 'confiabilidade', 'hedge', 'atendimento global']
-      },
-      {
-        id: 14,
-        q: 'Explique como os empréstimos sindicados são usados em mercados internacionais.',
-        a: 'São empréstimos concedidos por vários bancos juntos para financiar valores altos e dividir risco em operações internacionais.',
-        keywords: ['vários bancos', 'valor alto', 'divisão de risco']
-      },
-      {
-        id: 15,
-        q: 'Por que um banco desejaria participar de empréstimos sindicados Eurocredit?',
-        a: 'Para ganhar rendimento, diversificar risco e participar de operações grandes sem assumir sozinho todo o valor do empréstimo.',
-        keywords: ['ganhar rendimento', 'dividir risco', 'operação grande']
-      },
-      {
-        id: 16,
-        q: 'Por que as empresas podem emitir ações em mercados estrangeiros? Por que empresas dos EUA puderam emitir mais ações na Europa após 1999?',
-        a: 'Para captar recursos, ampliar base de investidores e ganhar visibilidade. Após 1999, a moeda única europeia reduziu barreiras e facilitou o acesso ao mercado europeu.',
-        keywords: ['captar recursos', 'mais investidores', 'visibilidade', 'moeda única']
-      },
-      {
-        id: 17,
-        q: 'Quais desenvolvimentos históricos levaram às taxas de câmbio flutuantes a partir de 1973?',
-        a: 'O sistema de Bretton Woods enfraqueceu, houve pressão sobre o dólar e ficou difícil manter taxas fixas. Em 1973, vários países passaram a deixar o câmbio flutuar.',
-        keywords: ['Bretton Woods', 'pressão sobre o dólar', 'fim das taxas fixas']
-      },
-      {
-        id: 18,
-        q: 'Se os juros dos EUA caem em relação aos britânicos, o que ocorre com demanda por libras, oferta de libras e valor da libra?',
-        a: 'A demanda dos EUA por libras tende a subir, a oferta de libras tende a cair e o valor da libra tende a subir.',
-        keywords: ['demanda por libras sobe', 'oferta cai', 'libra valoriza']
-      },
-      {
-        id: 19,
-        q: 'Descreva os efeitos de inflação, juros, renda, restrições comerciais e juros reais nas taxas de câmbio.',
-        a: 'Inflação alta enfraquece a moeda. Juros mais altos podem atrair capital e fortalecer a moeda. Renda maior pode elevar importações e enfraquecer a moeda. Restrições comerciais reduzem importações e podem fortalecer a moeda. Juros reais maiores tornam a moeda mais atrativa.',
-        keywords: ['inflação enfraquece', 'juros atraem capital', 'renda aumenta importação', 'restrição reduz importação', 'juros reais atraem']
-      },
-      {
-        id: 20,
-        q: 'Por que uma previsão pública sobre juros futuros pode afetar o dólar hoje? Por que às vezes não afeta?',
-        a: 'Porque o mercado reage às expectativas. Se a previsão for confiável e nova, pode mudar decisões agora. Se já era esperada ou não for considerada confiável, o impacto pode ser pequeno.',
-        keywords: ['expectativas', 'mercado reage hoje', 'credibilidade', 'já precificado']
-      },
-      {
-        id: 21,
-        q: 'Descreva um contrato a termo e como ele pode ser usado.',
-        a: 'Contrato a termo é um acordo para comprar ou vender moeda no futuro por uma taxa definida hoje. Ele é usado para proteção contra variação cambial.',
-        keywords: ['compra/venda futura', 'taxa definida hoje', 'hedge']
-      },
-      {
-        id: 22,
-        q: 'Descreva um contrato futuro de moeda.',
-        a: 'É um contrato padronizado negociado em bolsa para comprar ou vender moeda no futuro por um preço combinado.',
-        keywords: ['padronizado', 'negociado em bolsa', 'compra/venda futura']
-      },
-      {
-        id: 23,
-        q: 'Faça um quadro comparativo entre contratos a termo e futuro.',
-        a: 'A termo é privado, flexível e feito sob medida. Futuro é padronizado, negociado em bolsa e mais líquido.',
-        keywords: ['termo = privado e flexível', 'futuro = bolsa e padronizado', 'liquidez']
-      },
-      {
-        id: 24,
-        q: 'O que é arbitragem de moedas?',
-        a: 'É aproveitar diferenças de preço da mesma moeda em mercados diferentes para obter lucro sem risco relevante.',
-        keywords: ['diferença de preços', 'mercados diferentes', 'lucro']
-      },
-      {
-        id: 25,
-        q: 'Descreva o mercado de opções de moedas.',
-        a: 'É o mercado em que se compra o direito, mas não a obrigação, de comprar ou vender moeda por um preço definido até certa data.',
-        keywords: ['direito e não obrigação', 'comprar ou vender moeda', 'preço definido']
-      },
-      {
-        id: 26,
-        q: 'Descreva um contrato a termo e como ele pode ser usado.',
-        a: 'Contrato a termo é um acordo para comprar ou vender moeda no futuro por uma taxa definida hoje. Ele é usado para proteção contra variação cambial.',
-        keywords: ['compra/venda futura', 'taxa definida hoje', 'hedge']
-      },
-      {
-        id: 27,
-        q: 'Descreva um contrato futuro de moeda.',
-        a: 'É um contrato padronizado negociado em bolsa para comprar ou vender moeda no futuro por um preço combinado.',
-        keywords: ['padronizado', 'negociado em bolsa', 'compra/venda futura']
-      },
-      {
-        id: 28,
-        q: 'Faça um quadro comparativo entre contratos a termo e futuro.',
-        a: 'A termo é privado, flexível e feito sob medida. Futuro é padronizado, negociado em bolsa e mais líquido.',
-        keywords: ['termo = privado e flexível', 'futuro = bolsa e padronizado', 'liquidez']
-      },
-      {
-        id: 29,
-        q: 'O que é a arbitragem de moedas?',
-        a: 'É aproveitar diferenças de preço da mesma moeda em mercados diferentes para obter lucro sem risco relevante.',
-        keywords: ['diferença de preços', 'mercados diferentes', 'lucro']
-      },
-      {
-        id: 30,
-        q: 'Descreva o mercado de opções de moedas.',
-        a: 'É o mercado em que se compra o direito, mas não a obrigação, de comprar ou vender moeda por um preço definido até certa data.',
-        keywords: ['direito e não obrigação', 'comprar ou vender moeda', 'preço definido']
-      },
-      {
-        id: 31,
-        q: 'Quais os sistemas de taxa de câmbio? Cite os 4.',
-        a: 'Os quatro principais são: câmbio fixo, câmbio flutuante, câmbio administrado e conselho monetário ou dolarização, dependendo da classificação usada pelo professor.',
-        keywords: ['fixo', 'flutuante', 'administrado', 'conselho monetário ou dolarização']
-      },
-      {
-        id: 32,
-        q: 'Descreva o sistema de taxa de câmbio fixa e suas vantagens e desvantagens.',
-        a: 'No câmbio fixo, o governo mantém a moeda em valor estável em relação a outra referência. Vantagem: previsibilidade. Desvantagem: menor autonomia e necessidade de reservas.',
-        keywords: ['governo mantém valor', 'previsibilidade', 'menos autonomia', 'reservas']
-      },
-      {
-        id: 33,
-        q: 'Descreva o sistema de taxa de câmbio flutuante e suas vantagens e desvantagens.',
-        a: 'No câmbio flutuante, o mercado define o valor da moeda. Vantagem: ajuste mais livre. Desvantagem: maior volatilidade e incerteza.',
-        keywords: ['mercado define', 'ajuste livre', 'volatilidade']
-      },
-      {
-        id: 34,
-        q: 'Como é o sistema de taxa de câmbio administrada?',
-        a: 'É um sistema em que o mercado define o câmbio, mas o governo ou banco central intervém quando considera necessário.',
-        keywords: ['mercado + intervenção', 'banco central', 'quando necessário']
-      },
-      {
-        id: 35,
-        q: 'Para que servem os conselhos monetários?',
-        a: 'Servem para dar disciplina monetária, aumentar credibilidade e limitar a emissão de moeda, normalmente com lastro em moeda forte.',
-        keywords: ['disciplina monetária', 'credibilidade', 'limitar emissão', 'lastro']
-      },
-      {
-        id: 36,
-        q: 'O que significa dolarização da economia? Como o processo ocorreu na Argentina?',
-        a: 'Dolarização é quando o dólar passa a ser usado total ou parcialmente no lugar da moeda local. Na Argentina, houve forte uso do dólar e tentativa de vincular o peso ao dólar para conter instabilidade.',
-        keywords: ['uso do dólar', 'substituição parcial ou total', 'Argentina vinculou peso ao dólar']
-      },
-      {
-        id: 37,
-        q: 'Quais os benefícios de uma moeda única no bloco?',
-        a: 'Reduz custos de transação, elimina parte do risco cambial, facilita comércio e investimentos e aumenta integração econômica.',
-        keywords: ['menos custo', 'menos risco cambial', 'mais comércio', 'integração']
-      },
-      {
-        id: 38,
-        q: 'Quais as razões para uma intervenção governamental?',
-        a: 'As razões incluem controlar inflação, reduzir volatilidade cambial, proteger setores, manter competitividade e buscar estabilidade econômica.',
-        keywords: ['inflação', 'volatilidade', 'proteção', 'competitividade', 'estabilidade']
-      },
-      {
-        id: 39,
-        q: 'Como ocorre a intervenção do governo com finalidades políticas? Quais considerações devem ser levadas?',
-        a: 'O governo pode intervir no câmbio ou no comércio para atingir objetivos políticos e econômicos. Deve considerar custo, credibilidade, efeitos no mercado e consequências internacionais.',
-        keywords: ['intervenção política', 'câmbio/comércio', 'custo', 'credibilidade', 'efeitos internacionais']
-      }
-    ];
+{
+  id: 1,
+  q: 'Descreva um contrato a termo e como ele pode ser usado.',
+  a: 'Contrato a termo é um acordo para comprar ou vender moeda no futuro por uma taxa definida hoje. Ele é usado para proteção contra variação cambial.',
+  keywords: ['compra/venda futura', 'taxa definida hoje', 'hedge']
+},
+{
+  id: 2,
+  q: 'Descreva um contrato futuro de moeda.',
+  a: 'É um contrato padronizado negociado em bolsa para comprar ou vender moeda no futuro por um preço combinado.',
+  keywords: ['padronizado', 'negociado em bolsa', 'compra/venda futura']
+},
+{
+  id: 3,
+  q: 'Faça um quadro comparativo entre contratos a termo e futuro.',
+  a: 'A termo é privado, flexível e feito sob medida. Futuro é padronizado, negociado em bolsa e mais líquido.',
+  keywords: ['termo = privado e flexível', 'futuro = bolsa e padronizado', 'liquidez']
+},
+{
+  id: 4,
+  q: 'O que é arbitragem de moedas?',
+  a: 'É aproveitar diferenças de preço da mesma moeda em mercados diferentes para obter lucro sem risco relevante.',
+  keywords: ['diferença de preços', 'mercados diferentes', 'lucro']
+},
+{
+  id: 5,
+  q: 'Descreva o mercado de opções de moedas.',
+  a: 'É o mercado em que se compra o direito, mas não a obrigação, de comprar ou vender moeda por um preço definido até certa data.',
+  keywords: ['direito e não obrigação', 'comprar ou vender moeda', 'preço definido']
+},
+{
+  id: 6,
+  q: 'Quais os sistemas de taxa de câmbio? Cite os 4.',
+  a: 'Os quatro principais são: câmbio fixo, câmbio flutuante, câmbio administrado e conselho monetário ou dolarização, dependendo da classificação usada pelo professor.',
+  keywords: ['fixo', 'flutuante', 'administrado', 'conselho monetário ou dolarização']
+},
+{
+  id: 7,
+  q: 'Descreva o sistema de taxa de câmbio fixa e suas vantagens e desvantagens.',
+  a: 'No câmbio fixo, o governo mantém a moeda em valor estável em relação a outra referência. Vantagem: previsibilidade. Desvantagem: menor autonomia e necessidade de reservas.',
+  keywords: ['governo mantém valor', 'previsibilidade', 'menos autonomia', 'reservas']
+},
+{
+  id: 8,
+  q: 'Descreva o sistema de taxa de câmbio flutuante e suas vantagens e desvantagens.',
+  a: 'No câmbio flutuante, o mercado define o valor da moeda. Vantagem: ajuste mais livre. Desvantagem: maior volatilidade e incerteza.',
+  keywords: ['mercado define', 'ajuste livre', 'volatilidade']
+},
+{
+  id: 9,
+  q: 'Como é o sistema de taxa de câmbio administrada?',
+  a: 'É um sistema em que o mercado define o câmbio, mas o governo ou banco central intervém quando considera necessário.',
+  keywords: ['mercado + intervenção', 'banco central', 'quando necessário']
+},
+{
+  id: 10,
+  q: 'Para que servem os conselhos monetários?',
+  a: 'Servem para dar disciplina monetária, aumentar credibilidade e limitar a emissão de moeda, normalmente com lastro em moeda forte.',
+  keywords: ['disciplina monetária', 'credibilidade', 'limitar emissão', 'lastro']
+},
+{
+  id: 11,
+  q: 'O que significa dolarização da economia? Como o processo ocorreu na Argentina?',
+  a: 'Dolarização é quando o dólar passa a ser usado total ou parcialmente no lugar da moeda local. Na Argentina, houve forte uso do dólar e tentativa de vincular o peso ao dólar para conter instabilidade.',
+  keywords: ['uso do dólar', 'substituição parcial ou total', 'Argentina vinculou peso ao dólar']
+},
+{
+  id: 12,
+  q: 'Quais os benefícios de uma moeda única no bloco?',
+  a: 'Reduz custos de transação, elimina parte do risco cambial, facilita comércio e investimentos e aumenta integração econômica.',
+  keywords: ['menos custo', 'menos risco cambial', 'mais comércio', 'integração']
+},
+{
+  id: 13,
+  q: 'Quais as razões para uma intervenção governamental?',
+  a: 'As razões incluem controlar inflação, reduzir volatilidade cambial, proteger setores, manter competitividade e buscar estabilidade econômica.',
+  keywords: ['inflação', 'volatilidade', 'proteção', 'competitividade', 'estabilidade']
+},
+{
+  id: 14,
+  q: 'Como ocorre a intervenção do governo com finalidades políticas? Quais considerações devem ser levadas?',
+  a: 'O governo pode intervir no câmbio ou no comércio para atingir objetivos políticos e econômicos. Deve considerar custo, credibilidade, efeitos no mercado e consequências internacionais.',
+  keywords: ['intervenção política', 'câmbio/comércio', 'custo', 'credibilidade', 'efeitos internacionais']
+}
+       {
+    id: 15,
+    q: 'Como as empresas estão expostas no cenário econômico? O que significa exposição a transações?',
+    a: 'As empresas estão expostas às variações cambiais quando possuem recebimentos, pagamentos, custos ou receitas em moeda estrangeira. Exposição a transações é o risco de uma obrigação ou recebimento futuro ser afetado pela mudança na taxa de câmbio.',
+    keywords: ['exposição cambial', 'exposição a transações', 'recebimentos futuros', 'pagamentos futuros', 'variação cambial']
+  },
+  {
+    id: 16,
+    q: 'Como é identificado a exposição liquida?',
+    a: 'A exposição líquida é identificada comparando os valores que a empresa tem a receber e a pagar em moeda estrangeira. A diferença entre entradas e saídas mostra o quanto a empresa está realmente exposta.',
+    keywords: ['exposição líquida', 'entradas menos saídas', 'receber', 'pagar', 'moeda estrangeira']
+  },
+  {
+    id: 17,
+    q: 'Quais as técnicas de hedge utilizadas para resolver a exposição as transações?',
+    a: 'As principais técnicas são contrato a termo, contrato futuro, opções de moedas e hedge no mercado monetário. Elas servem para reduzir o risco de perda causado pela variação cambial.',
+    keywords: ['hedge', 'contrato a termo', 'contrato futuro', 'opções', 'mercado monetário']
+  },
+  {
+    id: 18,
+    q: 'Como é a decisão para a utilização do hedge?',
+    a: 'A decisão depende da comparação entre o risco cambial e o custo da proteção. A empresa deve avaliar se vale a pena pagar pelo hedge para reduzir a incerteza dos fluxos de caixa.',
+    keywords: ['decisão de hedge', 'risco cambial', 'custo da proteção', 'incerteza', 'fluxo de caixa']
+  },
+  {
+    id: 19,
+    q: 'Como é o custo real do hedge?',
+    a: 'O custo real do hedge é a diferença entre o resultado obtido com a proteção e o resultado que ocorreria sem o hedge. Ele pode envolver prêmios, juros, spreads e custo de oportunidade.',
+    keywords: ['custo real', 'prêmio', 'juros', 'spread', 'custo de oportunidade']
+  },
+  {
+    id: 20,
+    q: 'Como é hedge no mercado monetário?',
+    a: 'O hedge no mercado monetário usa empréstimos e aplicações financeiras para proteger valores em moeda estrangeira. A empresa antecipa ou compensa fluxos futuros para reduzir o risco cambial.',
+    keywords: ['mercado monetário', 'empréstimo', 'aplicação', 'proteção cambial', 'fluxos futuros']
+  },
+  {
+    id: 21,
+    q: 'Como são as políticas de hedge para as corporações multinacionais?',
+    a: 'As políticas de hedge definem quando, quanto e como a multinacional deve se proteger contra riscos cambiais. Elas padronizam decisões e ajudam a controlar a exposição financeira da empresa.',
+    keywords: ['política de hedge', 'multinacionais', 'risco cambial', 'padronização', 'controle da exposição']
+  },
+  {
+    id: 22,
+    q: 'Quais as limitações da aplicação do hedge para a exposição a transações?',
+    a: 'As limitações incluem custos, previsões imprecisas, dificuldade de saber exatamente os valores futuros e possibilidade de o hedge impedir ganhos caso o câmbio se mova favoravelmente.',
+    keywords: ['limitações do hedge', 'custos', 'previsão imprecisa', 'valores futuros', 'perda de ganho']
+  },
+  {
+    id: 23,
+    q: 'Como é o caso dos contratos long fowards?',
+    a: 'Contratos long forwards representam uma posição comprada em contrato a termo. Eles são usados quando a empresa precisará comprar moeda estrangeira no futuro e deseja fixar a taxa hoje.',
+    keywords: ['long forward', 'posição comprada', 'comprar moeda', 'taxa futura', 'contrato a termo']
+  },
+  {
+    id: 24,
+    q: 'Faça um quadro comparativo das técnicas alternativas ao hedge?',
+    a: 'O contrato a termo fixa a taxa futura; o futuro é padronizado e negociado em bolsa; a opção dá direito sem obrigação; e o hedge no mercado monetário usa empréstimos ou aplicações para compensar o risco.',
+    keywords: ['termo', 'futuro', 'opções', 'mercado monetário', 'comparação']
+  },
+  {
+    id: 25,
+    q: 'O que significa exposição econômica e porque ela pode ser mais complexa do que exposição a transações?',
+    a: 'Exposição econômica é o impacto das mudanças cambiais nos fluxos de caixa futuros e na competitividade da empresa. Ela é mais complexa porque afeta receitas, custos, preços e posição no mercado ao longo do tempo.',
+    keywords: ['exposição econômica', 'fluxos futuros', 'competitividade', 'receitas', 'custos']
+  },
+  {
+    id: 26,
+    q: 'Como usamos a demonstração de resultados para avaliar a exposição econômica?',
+    a: 'Usamos a demonstração de resultados analisando como receitas, custos e lucros são afetados por mudanças cambiais. Assim, é possível identificar onde a empresa está mais vulnerável.',
+    keywords: ['demonstração de resultados', 'receitas', 'custos', 'lucro', 'vulnerabilidade cambial']
+  },
+  {
+    id: 27,
+    q: 'Como a reestruturação pode reduzir a exposição econômica?',
+    a: 'A reestruturação pode reduzir a exposição econômica ao mudar produção, fornecedores, mercados de venda ou fontes de financiamento. Isso ajuda a equilibrar receitas e custos em diferentes moedas.',
+    keywords: ['reestruturação', 'produção', 'fornecedores', 'mercados', 'equilibrar moedas']
+  },
+  {
+    id: 28,
+    q: 'Quais a exposição temos dentro da reestruturação?',
+    a: 'Dentro da reestruturação, podemos ter exposição operacional, exposição cambial, exposição de custos, exposição de receitas e exposição de ativos.',
+    keywords: ['exposição operacional', 'exposição cambial', 'custos', 'receitas', 'ativos']
+  },
+  {
+    id: 29,
+    q: 'Quais as questões estão envolvidas dentro da reestruturação?',
+    a: 'As principais questões envolvem custos, logística, tributação, localização da produção, escolha de fornecedores, mercado consumidor e impacto sobre a competitividade.',
+    keywords: ['custos', 'logística', 'tributação', 'produção', 'competitividade']
+  },
+  {
+    id: 30,
+    q: 'Quais as estratégias de hedge possível para a exposição econômica?',
+    a: 'As estratégias incluem diversificar mercados, combinar receitas e custos na mesma moeda, realocar produção, mudar fornecedores e usar instrumentos financeiros quando necessário.',
+    keywords: ['diversificação', 'matching', 'mesma moeda', 'realocar produção', 'instrumentos financeiros']
+  },
+  {
+    id: 31,
+    q: 'Como ocorre a exposição de ativos fixos?',
+    a: 'A exposição de ativos fixos ocorre quando bens, fábricas ou equipamentos localizados no exterior têm seu valor afetado pela variação cambial.',
+    keywords: ['ativos fixos', 'fábricas', 'equipamentos', 'exterior', 'variação cambial']
+  },
+  {
+    id: 32,
+    q: 'Quais são as limitações da cobertura da exposição a conversão?',
+    a: 'As limitações incluem o fato de ser uma exposição contábil, não necessariamente de caixa, além dos custos do hedge e da dificuldade de proteger todos os valores convertidos.',
+    keywords: ['exposição a conversão', 'contábil', 'sem fluxo de caixa', 'custos', 'proteção limitada']
+  },
+  {
+    id: 33,
+    q: 'Qual a diferença intrínseca entre a perspectiva da Matriz e da Subsidiária no orçamento de capital?',
+    a: 'A subsidiária analisa o projeto com base nos fluxos locais, enquanto a matriz considera os fluxos que realmente retornarão para ela, incluindo câmbio, impostos, remessas e restrições.',
+    keywords: ['matriz', 'subsidiária', 'fluxos locais', 'remessas', 'câmbio']
+  },
+  {
+    id: 34,
+    q: 'Quais os insumos para o orçamento de capital?',
+    a: 'Os principais insumos são investimento inicial, fluxos de caixa esperados, taxa de desconto, valor residual, impostos, inflação, câmbio e risco do projeto.',
+    keywords: ['investimento inicial', 'fluxos de caixa', 'taxa de desconto', 'valor residual', 'risco']
+  },
+  {
+    id: 35,
+    q: 'Cite 3 fatores a se considerar para o orçamento de capital e explique em detalhes a sua importância.',
+    a: 'Três fatores importantes são fluxo de caixa, taxa de desconto e risco. O fluxo mostra o retorno esperado, a taxa de desconto mede o custo do capital e o risco indica a incerteza do projeto.',
+    keywords: ['fluxo de caixa', 'taxa de desconto', 'risco', 'retorno esperado', 'custo de capital']
+  }
+];
+      
 
     let filteredQuestions = [...questions];
     let currentIndex = 0;
